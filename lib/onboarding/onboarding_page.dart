@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
     class OnboardingPage extends StatelessWidget {
       @override
@@ -25,11 +26,28 @@ import 'package:flutter/material.dart';
                 SizedBox(height: 10,),
                 Text('What can we say if there is an app that you can transfer '
                     'money without getting any fees?\n With promise',
-                style: TextStyle(fontWeight: FontWeight.w300)
-                )
+                style: TextStyle(fontWeight: FontWeight.w300),
+               textAlign: TextAlign.center,
+                ),
+                SizedBox(height: 10,),
+                Row(mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                  Container(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 48,
+                      vertical: 14,),
+                    decoration: BoxDecoration(
+                      color: Colors.orange,
+                     borderRadius: BorderRadius.circular(20),
+                      ),
+                    child: Text('Ok sign me up',
+                      style: TextStyle(fontWeight: FontWeight.w400),
+                    ) ,
+                    ),
+                ] )
 
 
-            ])
+              ])
 
         )
         );
