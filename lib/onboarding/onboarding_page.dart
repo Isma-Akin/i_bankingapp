@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
     class OnboardingPage extends StatelessWidget {
@@ -5,13 +7,31 @@ import 'package:flutter/material.dart';
       Widget build(BuildContext context) {
         return Scaffold(
           backgroundColor: Colors.indigo,
-          body: false,
-          child: Column(children: [
-            SizedBox(height: 80),
-            Image.asset(assets/image_onboarding.png',
-                width: 355
-            )
-          ],)
+          body: SafeArea(
+            bottom: false,
+            child: Column(
+              children: [
+                SizedBox (
+                  height: 80,
+            ),
+           Image.asset(
+              'image_onboarding.png',
+              width: 355,
+            ),
+                SizedBox(height: 90,),
+                Text('A pristine way for you',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height: 10,),
+                Text('What can we say if there is an app that you can transfer '
+                    'money without getting any fees?\n With promise',
+                style: TextStyle(fontWeight: FontWeight.w300)
+                )
+
+
+            ])
+
+        )
         );
       }
     }
