@@ -1,6 +1,6 @@
 # i_bankingapp
 
-A pratice app to vacuum all your money
+A pratice banking app
 
 ## Getting Started
 
