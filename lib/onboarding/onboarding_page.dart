@@ -10,6 +10,14 @@ import 'package:flutter/rendering.dart';
           backgroundColor: Colors.indigo,
           body: SafeArea(
             bottom: false,
+            child: Stack(
+            children: [
+              Positioned(bottom: -20,
+            left: -60,
+            child: Image.asset('image_hand.png'),
+            width: 250,
+            ),
+            Center(
             child: Column(
               children: [
                 SizedBox (
@@ -21,7 +29,7 @@ import 'package:flutter/rendering.dart';
             ),
                 SizedBox(height: 90,),
                 Text('A pristine way for you',
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                 ),
                 SizedBox(height: 10,),
                 Text('What can we say if there is an app that you can transfer '
@@ -41,15 +49,13 @@ import 'package:flutter/rendering.dart';
                      borderRadius: BorderRadius.circular(20),
                       ),
                     child: Text('Ok sign me up',
-                      style: TextStyle(fontWeight: FontWeight.w400, color: Colors.white),
+                      style: TextStyle(fontWeight: FontWeight.w400, color: Colors.black),
                     ) ,
                     ),
-                ] )
-
-
-              ])
-
-        )
-        );
-      }
-    }
+                ]),
+              ]),
+            ),
+          ],
+            ))
+        );}
+        }
