@@ -26,7 +26,7 @@ import 'package:flutter/rendering.dart';
                 SizedBox(height: 10,),
                 Text('What can we say if there is an app that you can transfer '
                     'money without getting any fees?\n With promise',
-                style: TextStyle(fontWeight: FontWeight.w300),
+                style: TextStyle(fontWeight: FontWeight.w300, color: Colors.white),
                textAlign: TextAlign.center,
                 ),
                 SizedBox(height: 10,),
@@ -41,7 +41,7 @@ import 'package:flutter/rendering.dart';
                      borderRadius: BorderRadius.circular(20),
                       ),
                     child: Text('Ok sign me up',
-                      style: TextStyle(fontWeight: FontWeight.w400),
+                      style: TextStyle(fontWeight: FontWeight.w400, color: Colors.white),
                     ) ,
                     ),
                 ] )
