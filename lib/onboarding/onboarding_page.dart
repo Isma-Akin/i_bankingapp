@@ -40,6 +40,7 @@ import 'package:flutter/rendering.dart';
                 SizedBox(height: 10,),
                 Row(mainAxisAlignment: MainAxisAlignment.end,
                     children: [
+                      GestureDetector(onTap: () {},),
                   Container(
                     padding: EdgeInsets.symmetric(
                       horizontal: 48,
