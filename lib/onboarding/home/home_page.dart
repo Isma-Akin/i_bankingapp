@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:i_bankingapp/onboarding/home/components/bank_cards.dart';
 import 'package:i_bankingapp/onboarding/home/header.dart';
 
 class Homepage extends StatelessWidget {
@@ -20,6 +21,7 @@ class Homepage extends StatelessWidget {
         ),
         ListView(
           children: [ Header(),
+            BankCards()
 
           ],
         )]
