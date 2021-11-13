@@ -18,7 +18,9 @@ class BankCards extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(26),
             ),
-            child: Center(child: Image.asset('icon_add.png',
+            child: Center(
+              child: Image.asset(
+                'icon_add.png',
               width: 25,
             ),
             ),

@@ -46,7 +46,11 @@ class OnboardingPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(
+                          builder: (context) => Homepage()
+                      ));
+                    },
                     child: Container(
                       padding: EdgeInsets.symmetric(
                         horizontal: 48,
