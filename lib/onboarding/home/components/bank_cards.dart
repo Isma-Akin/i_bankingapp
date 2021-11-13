@@ -6,9 +6,10 @@ class BankCards extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(top: 30),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
-        child: Row( children: [
+        child: Row(children: [
           SizedBox(width: 30,),
           Container(
             width: 100,
@@ -17,14 +18,22 @@ class BankCards extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(26),
             ),
-            child: Center(
-              child: Image.asset('icon_add.png',
-               width: 25,
-               )
-            ],
+            child: Center(child: Image.asset('icon_add.png',
+              width: 25,
             ),
-
+            ),
+          ),
+          SizedBox(width: 20,),
+          Image.asset('image_card.png',
+          height: 210,
+          ),
+          SizedBox(width: 30,)
+        ],),
       ),
     );
   }
 }
+
+
+
+
