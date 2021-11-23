@@ -18,22 +18,22 @@ class OnboardingPage extends StatelessWidget {
             Positioned(
               bottom: -20,
             left: -60,
-            child: Image.asset('image_hand.png',
+            child: Image.asset('assets/image_hand.png',
             width: 250,)
               ,),
             Center(
               child: Column(children: [
                 SizedBox(height: 80,),
                 Image.asset(
-                  'image_onboarding.png',
-                width: 355, ),
+                  'assets/image_onboarding.png',
+                width: 355,),
                 SizedBox(height: 80,),
-                Text('A better way for you',
+                Text('A better way for you!',
                   style: TextStyle(fontSize: 24,
                   fontWeight: FontWeight.w300),
                 ),
                 SizedBox(height: 10),
-                Text('What can we say if there is an app\n that you can transfer money without getting any fee? Promises',
+                Text('What can we say if there is an app\n that you can transfer money without getting any fees? We keep our promises.',
                 style: TextStyle(color: Colors.white,
                 fontSize: 16,
                 fontWeight: FontWeight.w300),
@@ -58,13 +58,15 @@ class OnboardingPage extends StatelessWidget {
                       ),
                       decoration: BoxDecoration(
                         color: Colors.yellow,
+                          boxShadow: [BoxShadow(color: Colors.black,
+                              offset: Offset(0, 3), blurRadius: 7)] ,
                         borderRadius: BorderRadius.horizontal(
                           left: Radius.circular(20),
                         )
                       ),
                       child: Text('Ok, Bring me in',
                       style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 20,
                       fontWeight: FontWeight.w300),
                       ),
                     ),
