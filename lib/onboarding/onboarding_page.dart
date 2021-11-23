@@ -59,7 +59,7 @@ class OnboardingPage extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.yellow,
                           boxShadow: [BoxShadow(color: Colors.black,
-                              offset: Offset(0, 3), blurRadius: 7)] ,
+                              offset: Offset(0, 3), blurRadius: 8)] ,
                         borderRadius: BorderRadius.horizontal(
                           left: Radius.circular(20),
                         )
